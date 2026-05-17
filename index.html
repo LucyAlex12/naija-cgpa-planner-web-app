@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Naija CGPA Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">Student success tool</p>
+      <h1>Plan your semester CGPA.</h1>
+      <p>Add courses, units, and grades to calculate GPA on a 5.0 Nigerian university scale.</p>
+    </section>
+
+    <section class="dashboard">
+      <article><span>GPA</span><strong id="gpa">0.00</strong></article>
+      <article><span>Total units</span><strong id="units">0</strong></article>
+      <article><span>Standing</span><strong id="standing">Start</strong></article>
+    </section>
+
+    <form id="courseForm">
+      <input id="code" placeholder="Course code e.g. CSC 201" required>
+      <input id="unit" type="number" min="1" max="6" placeholder="Units" required>
+      <select id="grade">
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>E</option>
+        <option>F</option>
+      </select>
+      <button>Add course</button>
+    </form>
+
+    <section id="courses" class="courses"></section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
